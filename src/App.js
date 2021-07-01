@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Nav />
-        <Switch>
-          <CartProvider>
+        <CartProvider>
+          <Nav />
+          <Switch>
             <Route path="/" exact component={Menu} />
             <Route path="/shopping-cart" exact component={ShoppingCart} />
-          </CartProvider>
-        </Switch>
+          </Switch>
+        </CartProvider>
       </Router>
     </div>
   );

@@ -44,6 +44,7 @@ figure {
 .product-name {
   font-size: 0.9rem;
   color: darkslategray;
+  letter-spacing: 0.1rem;
 }
 .product-price {
   font-size: 1.5rem;

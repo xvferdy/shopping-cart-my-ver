@@ -6,7 +6,7 @@ import ProductList from "../components/ProductList";
 function Menu() {
   return (
     <div className="menu-container">
-      <h1>Our Product</h1>
+      <h1>Our Products</h1>
       <section className="menu-content">
         <ProductList />
       </section>

@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/Nav.css";
-import logo from "../assets/logo2.png";
-
 import { NavLink } from "react-router-dom";
 
+// material
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+
+//context to use
+import { CartsContext } from "../context/Carts.context";
+
 function Nav() {
+  const carts = useContext(CartsContext);
+
+  console.log(carts);
+
   return (
     <div className="nav-container">
       <header className="nav-content">
@@ -13,7 +21,8 @@ function Nav() {
             Market
           </NavLink>
           <NavLink exact activeClassName="active-link" to="/shopping-cart">
-            Cart
+            Cart <ShoppingCartIcon className="cart-icon" /> (
+            {carts ? carts.length : 0})
           </NavLink>
         </nav>
       </header>

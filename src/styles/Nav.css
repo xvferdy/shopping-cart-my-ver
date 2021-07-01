@@ -5,34 +5,44 @@
 header.nav-content {
   width: 80vw;
   margin: 0 auto;
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
+  height: 60px;
+  overflow: hidden;
 }
 
 nav {
   display: flex;
 }
 .nav-content nav > * {
-  color: black;
+  font-weight: bold;
+  color: darkslategray;
   padding: 0 2rem;
-  line-height: 80px;
+  line-height: 52px;
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: 0.3s ease-in-out;
+
+  transition: 0.2s ease-in-out;
+  letter-spacing: 0.1rem;
 }
+.cart-icon {
+  position: relative;
+  top: 6px;
+}
+
 .nav-container nav > *:hover {
-  border-bottom: 10px solid var(--main-color-hover);
+  border-bottom: 8px solid var(--main-color-hover);
 }
 
 .nav-container .active-link {
   background-color: var(--main-color);
-  border-bottom: 10px solid var(--main-color-hover);
+  border-bottom: 8px solid var(--main-color-hover);
 }
 
 @media screen and (max-width: 786px) {
   header.nav-content {
     width: 90%;
+  }
+  .nav-content nav > *:nth-child(2) {
+    display: inline-block;
+    flex-grow: 1;
   }
 }
 

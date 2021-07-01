@@ -10,13 +10,14 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 :root {
-  --main-color: #eec4c4;
-  --main-color-hover: #f29191;
-  --dark-color: #d1d9d9;
+  --main-color: #f9f9f9;
+  --main-color-hover: #f6c6ea;
+  --dark-color: #c490e4;
   --container-width: 1100px;
 }
 
 h1 {
+  color: darkslategray;
   padding: 0;
   margin: 0;
   font-size: 2rem;
