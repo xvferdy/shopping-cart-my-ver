@@ -1,0 +1,43 @@
+.nav-container {
+  background: var(--dark-color);
+}
+
+header.nav-content {
+  width: 80vw;
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+}
+.nav-content nav > * {
+  color: black;
+  padding: 0 2rem;
+  line-height: 80px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s ease-in-out;
+}
+.nav-container nav > *:hover {
+  border-bottom: 10px solid var(--main-color-hover);
+}
+
+.nav-container .active-link {
+  background-color: var(--main-color);
+  border-bottom: 10px solid var(--main-color-hover);
+}
+
+@media screen and (max-width: 786px) {
+  header.nav-content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  header.nav-content {
+    width: 100%;
+  }
+}

@@ -8,13 +8,13 @@ const reducer = (state, action) => {
     case "MOREQTY":
       return state.map((product) =>
         product.id === action.id && product.quantity < 10
-          ? { ...product, quantity: product.quantity++ }
+          ? { ...product, quantity: product.quantity + 1 }
           : product
       );
     case "LESSQTY":
       return state.map((product) =>
         product.id === action.id && product.quantity > 1
-          ? { ...product, quantity: product.quantity-- }
+          ? { ...product, quantity: product.quantity - 1 }
           : product
       );
     case "EDITQTY":

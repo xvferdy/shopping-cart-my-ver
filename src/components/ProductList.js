@@ -1,35 +1,17 @@
 import React from "react";
 import Product from "./Product";
+import products from "../helpers/markets";
 
 function ProductList() {
-  //contoh produk yang kita miliki
-  const products = [
-    {
-      id: 1,
-      product: "Kacamata",
-      price: 1000,
-    },
-    {
-      id: 2,
-      product: "Piring",
-      price: 1000,
-    },
-    {
-      id: 3,
-      product: "Topi",
-      price: 2000,
-    },
-  ];
-
   console.log("ProductList rendered");
 
   return (
-    <div>
-      <h3>List of Product</h3>
-
-      {products.map((product, idx) => (
-        <Product key={idx} {...product} />
-      ))}
+    <div className="product-list-container">
+      <div className="product-list-content">
+        {products.map((product, idx) => (
+          <Product key={idx} {...product} />
+        ))}
+      </div>
     </div>
   );
 }
