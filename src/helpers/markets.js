@@ -13,7 +13,7 @@ const products = [
   {
     id: 2,
     img: baju2,
-    product: "Bloody Butterfly",
+    product: "Bloody Butterfly Zero Zero",
     color: "Pink",
     price: 1000,
   },

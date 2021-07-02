@@ -11,7 +11,7 @@ import { CartProvider } from "./context/Carts.context";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/shopping-cart-my-ver">
         <CartProvider>
           <Nav />
           <Switch>

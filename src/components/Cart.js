@@ -1,23 +1,32 @@
 import React, { useContext } from "react";
 
+// material
+import Button from "@material-ui/core/Button";
+
 //context to use
 import { DispatchCartsContext } from "../context/Carts.context";
 
-function Cart({ id, product, price, quantity }) {
+function Cart({ id, product, price, quantity, img }) {
   const dispatch = useContext(DispatchCartsContext);
 
   let total = price * quantity;
 
   return (
-    <div>
-      <div>
-        {`${product} Rp.${price} x`}{" "}
+    <div className="cart-content">
+      <img className="cart-img" src={img} alt="product" />
+
+      <div className="cart-name-prices">
+        <div>{product}</div>
+        <div>Rp.{price}</div>
+      </div>
+
+      <div className="cart-quantity">
         <button
           onClick={() => {
-            dispatch({ type: "MOREQTY", id: id });
+            dispatch({ type: "LESSQTY", id: id });
           }}
         >
-          +
+          -
         </button>
         <input
           value={quantity}
@@ -29,22 +38,26 @@ function Cart({ id, product, price, quantity }) {
           min="1"
           max="10"
         />
+
         <button
           onClick={() => {
-            dispatch({ type: "LESSQTY", id: id });
+            dispatch({ type: "MOREQTY", id: id });
           }}
         >
-          -
-        </button>{" "}
-        {`Total: Rp.${total}`}{" "}
-        <button
-          onClick={() => {
-            dispatch({ type: "REMOVE", id: id });
-          }}
-        >
-          Remove
+          +
         </button>
       </div>
+
+      <div className="cart-item-total">{`Total: Rp.${total}`}</div>
+
+      <Button
+        variant="outlined"
+        onClick={() => {
+          dispatch({ type: "REMOVE", id: id });
+        }}
+      >
+        Remove
+      </Button>
     </div>
   );
 }

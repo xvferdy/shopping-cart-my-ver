@@ -1,6 +1,6 @@
 /* MENU PAGE */
 .menu-container {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 section.menu-content {
@@ -11,7 +11,7 @@ section.menu-content {
 
 /* PRODUCT LIST */
 .product-list-content {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -25,13 +25,13 @@ section.menu-content {
   margin: 10px;
 }
 
-figure {
+.product-content figure {
   display: flex;
   justify-content: center;
   overflow: hidden;
 }
 
-.product-img {
+figure .product-img {
   background-size: cover;
   align-items: center;
   transition: 0.2s;
@@ -47,7 +47,7 @@ figure {
   letter-spacing: 0.1rem;
 }
 .product-price {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: black;
 }
 

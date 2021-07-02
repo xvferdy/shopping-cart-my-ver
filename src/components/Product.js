@@ -27,7 +27,10 @@ function Product({ id, product, price, img, color }) {
           variant="outlined"
           disabled={inCart}
           onClick={() => {
-            dispatch({ type: "ADD", product: { id, product, price } });
+            dispatch({
+              type: "ADD",
+              product: { id, product, price, img, color },
+            });
           }}
         >
           {inCart ? "Added!" : "  Add to Cart"}

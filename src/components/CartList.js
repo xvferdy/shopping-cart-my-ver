@@ -18,18 +18,22 @@ function CartList() {
   console.log("CartList rendered");
 
   return (
-    <div>
-      <h3>List of Cart</h3>
-      {carts.length > 0 ? (
-        <>
-          {carts.map((cart, idx) => (
-            <Cart key={idx} {...cart} />
-          ))}
-          <p>Total that you will pay: Rp.{total.price}</p>
-        </>
-      ) : (
-        <p>No item in the cart</p>
-      )}
+    <div className="cart-list-container">
+      <div className="cart-list-content">
+        {carts.length > 0 ? (
+          <p>
+            {carts.map((cart, idx) => (
+              <>
+                <Cart key={idx} {...cart} />
+                <hr />
+              </>
+            ))}
+            <p>Total that you will pay: Rp.{total.price}</p>
+          </p>
+        ) : (
+          <p>No item in the cart</p>
+        )}
+      </div>
     </div>
   );
 }
