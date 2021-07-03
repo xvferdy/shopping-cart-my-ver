@@ -1,5 +1,8 @@
 .nav-container {
   background: var(--dark-color);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 header.nav-content {
@@ -9,7 +12,7 @@ header.nav-content {
   overflow: hidden;
 }
 
-nav {
+.nav-content nav {
   display: flex;
 }
 .nav-content nav > * {
@@ -49,5 +52,11 @@ nav {
 @media screen and (max-width: 481px) {
   header.nav-content {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .cart-icon {
+    display: none !important;
   }
 }

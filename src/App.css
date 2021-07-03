@@ -1,7 +1,6 @@
 * {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   box-sizing: border-box;
-  /* border: 1px solid grey; */
 }
 html,
 body {
@@ -23,4 +22,5 @@ h1 {
   font-size: 2rem;
   text-shadow: 2px 2px 3px silver;
   text-align: center;
+  letter-spacing: 0.1rem;
 }

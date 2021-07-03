@@ -6,18 +6,21 @@ import Button from "@material-ui/core/Button";
 //context to use
 import { DispatchCartsContext } from "../context/Carts.context";
 
-function Cart({ id, product, price, quantity, img }) {
+function Cart({ id, product, price, quantity, img, color }) {
   const dispatch = useContext(DispatchCartsContext);
 
   let total = price * quantity;
 
   return (
     <div className="cart-content">
-      <img className="cart-img" src={img} alt="product" />
+      <figure>
+        <img className="cart-img" src={img} alt="product" />
+      </figure>
 
       <div className="cart-name-prices">
-        <div>{product}</div>
-        <div>Rp.{price}</div>
+        <div className="cart-name"> {product}</div>
+        <div className="cart-color">Color: {color}</div>
+        <div className="cart-prices">Per Item Rp. {price}</div>
       </div>
 
       <div className="cart-quantity">
@@ -48,7 +51,9 @@ function Cart({ id, product, price, quantity, img }) {
         </button>
       </div>
 
-      <div className="cart-item-total">{`Total: Rp.${total}`}</div>
+      <div className="cart-item-total">
+        <div>{`Total Rp.${total}`}</div>
+      </div>
 
       <Button
         variant="outlined"
