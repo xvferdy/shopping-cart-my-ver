@@ -8,6 +8,10 @@ import Nav from "./components/Nav";
 //context provider
 import { CartProvider } from "./context/Carts.context";
 
+//cttt
+// galaxy fold nav sticky
+// formatting
+
 function App() {
   return (
     <div className="App">
