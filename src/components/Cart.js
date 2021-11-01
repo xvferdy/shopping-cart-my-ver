@@ -34,7 +34,11 @@ function Cart({ id, product, price, quantity, img, color }) {
         <input
           value={quantity}
           onChange={(e) => {
-            dispatch({ type: "EDITQTY", id: id, quantity: e.target.value });
+            dispatch({
+              type: "EDITQTY",
+              id: id,
+              quantity: Number(e.target.value),
+            });
           }}
           style={{ width: "50px" }}
           type="number"
