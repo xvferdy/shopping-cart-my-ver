@@ -1,19 +1,26 @@
 import React from "react";
-import "./App.css";
-import CartList from "./components/CartList";
-import ProductList from "./components/ProductList";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-//context provider
+import "./App.css";
+import Menu from "./pages/Menu";
+import ShoppingCart from "./pages/ShoppingCart";
+import Nav from "./components/Nav";
+
+// context provider
 import { CartProvider } from "./context/Carts.context";
 
 function App() {
   return (
     <div className="App">
-      <CartProvider>
-        <CartList />
-        <hr />
-        <ProductList />
-      </CartProvider>
+      <Router basename="/shopping-cart-my-ver">
+        <CartProvider>
+          <Nav />
+          <Switch>
+            <Route path="/" exact component={Menu} />
+            <Route path="/shopping-cart" exact component={ShoppingCart} />
+          </Switch>
+        </CartProvider>
+      </Router>
     </div>
   );
 }
