@@ -16,6 +16,7 @@ export function CartProvider(props) {
     return localData ? JSON.parse(localData) : defaultCart;
   });
 
+  // local storage
   useEffect(() => {
     localStorage.setItem("carts", JSON.stringify(carts));
   }, [carts]);
