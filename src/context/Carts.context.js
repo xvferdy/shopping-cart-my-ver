@@ -19,8 +19,6 @@ export function CartProvider(props) {
     localStorage.setItem("carts", JSON.stringify(carts));
   }, [carts]);
 
-  console.log("cartscontext");
-
   console.log(carts);
 
   return (
