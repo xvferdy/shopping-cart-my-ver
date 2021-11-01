@@ -1,11 +1,11 @@
 import React, { createContext, useReducer } from "react";
 import cartReducer from "../reducer/Carts.reducer";
 
-//context
+// context
 export const CartsContext = createContext();
 export const DispatchCartsContext = createContext();
 
-//context provider
+// context provider
 const defaultCart = [];
 
 export function CartProvider(props) {

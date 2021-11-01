@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 // material
 import Button from "@material-ui/core/Button";
 
-//context to use
+// context to use
 import { DispatchCartsContext } from "../context/Carts.context";
 
 function Cart({ id, product, price, quantity, img, color }) {

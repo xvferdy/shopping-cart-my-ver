@@ -5,14 +5,12 @@ import { NavLink } from "react-router-dom";
 // material
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
-//context to use
+// context to use
 import { CartsContext } from "../context/Carts.context";
 
 function Nav() {
   const carts = useContext(CartsContext);
-
   console.log(carts);
-
   return (
     <div className="nav-container">
       <header className="nav-content">

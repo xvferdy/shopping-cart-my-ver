@@ -3,7 +3,7 @@ import Product from "./Product";
 import products from "../helpers/markets";
 
 function ProductList() {
-  console.log("ProductList rendered");
+  // console.log("ProductList rendered");
 
   return (
     <div className="product-list-container">
