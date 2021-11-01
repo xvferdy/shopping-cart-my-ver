@@ -9,8 +9,6 @@ export const DispatchCartsContext = createContext();
 const defaultCart = [];
 
 export function CartProvider(props) {
-  // const [carts, dispatch] = useReducer(cartReducer, defaultCart);
-
   const [carts, dispatch] = useReducer(cartReducer, defaultCart, () => {
     const localData = localStorage.getItem("carts");
     return localData ? JSON.parse(localData) : defaultCart;
