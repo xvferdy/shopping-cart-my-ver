@@ -10,19 +10,19 @@ import Nav from "./components/Nav";
 import { CartProvider } from "./context/Carts.context";
 
 function App() {
-  return (
-    <div className="App">
-      <Router basename="/shopping-cart-my-ver">
-        <CartProvider>
-          <Nav />
-          <Switch>
-            <Route path="/" exact component={Menu} />
-            <Route path="/shopping-cart" exact component={ShoppingCart} />
-          </Switch>
-        </CartProvider>
-      </Router>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Router basename="/shopping-cart-my-ver">
+				<CartProvider>
+					<Nav />
+					<Switch>
+						<Route path="/" exact component={Menu} />
+						<Route path="/shopping-cart" exact component={ShoppingCart} />
+					</Switch>
+				</CartProvider>
+			</Router>
+		</div>
+	);
 }
 
 export default App;

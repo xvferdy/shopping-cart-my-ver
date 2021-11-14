@@ -1,74 +1,73 @@
 import React, { useContext } from "react";
-
-// material
 import Button from "@material-ui/core/Button";
-
-// context to use
 import { DispatchCartsContext } from "../context/Carts.context";
 
 function Cart({ id, product, price, quantity, img, color }) {
-  const dispatch = useContext(DispatchCartsContext);
+	// context to use
+	const dispatch = useContext(DispatchCartsContext);
 
-  let total = price * quantity;
+	let total = price * quantity;
 
-  return (
-    <div className="cart-content">
-      <figure>
-        <img className="cart-img" src={img} alt="product" />
-      </figure>
+	// console.log("Cart rendered");
 
-      <div className="cart-name-prices">
-        <div className="cart-name"> {product}</div>
-        <div className="cart-color">Color: {color}</div>
-        <div className="cart-prices">Per Item Rp. {price}</div>
-      </div>
+	return (
+		<div className="cart-content">
+			<figure>
+				<img className="cart-img" src={img} alt="product" />
+			</figure>
 
-      <div className="cart-quantity">
-        <button
-          onClick={() => {
-            dispatch({ type: "LESSQTY", id: id });
-          }}
-        >
-          -
-        </button>
-        <input
-          value={quantity}
-          onChange={(e) => {
-            dispatch({
-              type: "EDITQTY",
-              id: id,
-              quantity: Number(e.target.value),
-            });
-          }}
-          style={{ width: "50px" }}
-          type="number"
-          min="1"
-          max="10"
-        />
+			<div className="cart-name-prices">
+				<div className="cart-name"> {product}</div>
+				<div className="cart-color">Color: {color}</div>
+				<div className="cart-prices">Per Item Rp. {price}</div>
+			</div>
 
-        <button
-          onClick={() => {
-            dispatch({ type: "MOREQTY", id: id });
-          }}
-        >
-          +
-        </button>
-      </div>
+			<div className="cart-quantity">
+				<button
+					onClick={() => {
+						dispatch({ type: "LESSQTY", id: id });
+					}}
+				>
+					-
+				</button>
+				<input
+					value={quantity}
+					onChange={(e) => {
+						dispatch({
+							type: "EDITQTY",
+							id: id,
+							quantity: Number(e.target.value),
+						});
+					}}
+					style={{ width: "50px" }}
+					type="number"
+					min="1"
+					max="10"
+				/>
 
-      <div className="cart-item-total">
-        <div>{`Total Rp.${total}`}</div>
-      </div>
+				<button
+					onClick={() => {
+						dispatch({ type: "MOREQTY", id: id });
+					}}
+				>
+					+
+				</button>
+			</div>
 
-      <Button
-        variant="outlined"
-        onClick={() => {
-          dispatch({ type: "REMOVE", id: id });
-        }}
-      >
-        Remove
-      </Button>
-    </div>
-  );
+			<div className="cart-item-total">
+				<div>{`Total Rp.${total}`}</div>
+			</div>
+
+			<Button
+				variant="outlined"
+				onClick={() => {
+					dispatch({ type: "REMOVE", id: id });
+				}}
+			>
+				Remove
+			</Button>
+		</div>
+	);
 }
 
 export default Cart;

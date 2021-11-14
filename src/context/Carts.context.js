@@ -9,23 +9,23 @@ export const DispatchCartsContext = createContext();
 const defaultCart = [];
 
 export function CartProvider(props) {
-  const [carts, dispatch] = useReducer(cartReducer, defaultCart, () => {
-    const localData = localStorage.getItem("carts");
-    return localData ? JSON.parse(localData) : defaultCart;
-  });
+	const [carts, dispatch] = useReducer(cartReducer, defaultCart, () => {
+		const localData = localStorage.getItem("carts");
+		return localData ? JSON.parse(localData) : defaultCart;
+	});
 
-  // local storage
-  useEffect(() => {
-    localStorage.setItem("carts", JSON.stringify(carts));
-  }, [carts]);
+	// local storage
+	useEffect(() => {
+		localStorage.setItem("carts", JSON.stringify(carts));
+	}, [carts]);
 
-  console.log(carts);
+	// console.log(carts);
 
-  return (
-    <CartsContext.Provider value={carts}>
-      <DispatchCartsContext.Provider value={dispatch}>
-        {props.children}
-      </DispatchCartsContext.Provider>
-    </CartsContext.Provider>
-  );
+	return (
+		<CartsContext.Provider value={carts}>
+			<DispatchCartsContext.Provider value={dispatch}>
+				{props.children}
+			</DispatchCartsContext.Provider>
+		</CartsContext.Provider>
+	);
 }
