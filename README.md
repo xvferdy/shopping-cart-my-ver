@@ -7,17 +7,20 @@
     - [Built with](#built-with)
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
-    - [Installing It](#installing-it)
-    - [Running it](#running-it)
+    - [Installation](#installation)
+    - [Launch](#launch)
 - [Live](#live)
 
 ## About the Project
-Loreming
+Simple implementation of state management using react built-in hooks ➤ `useContext()`, `useReducer()` and as an example of a case study on this project is a supermarket/shopping cart.
+
+**Overview** 🌈
+<p align="">
+  <img src="./src/assets/overview.JPG">
+</p>
 
 ### Built With
 - React
-- [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext)
-- [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer)
 
 ## Getting Started
 ### Prerequisites
@@ -25,18 +28,18 @@ Loreming
 - [NPM](https://www.npmjs.com/)
 
 
-## Installing It
+## Installation
 ```
 npm install
 ```
+```
+npm start
+```
 
-## Running it
+## Launch
 - http://localhost:3000/ ➡️ Product list
 - http://localhost:3000/shopping-cart ➡️ Cart list
 
 
-### Live
-**Overview** 🌈
-<p align="">
-  <img src="./src/assets/overview.JPG">
-</p>
+## Live
+https://xvferdy.github.io/shopping-cart-my-ver/
