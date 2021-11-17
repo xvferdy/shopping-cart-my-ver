@@ -35,6 +35,10 @@ npm install
 ```
 npm start
 ```
+**Deployment**
+```
+npm install --save gh-pages
+```
 ###### package.json
 ```JSON
   "homepage": "https://myusername.github.io/shopping-cart-my-ver",
