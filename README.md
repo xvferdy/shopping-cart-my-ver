@@ -35,8 +35,16 @@ npm install
 ```
 npm start
 ```
+###### package.json
+```JSON
+  "homepage": "https://myusername.github.io/shopping-cart-my-ver",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+  },
 ```
-npm run build
+```
+npm run deploy
 ```
 
 ## Launch
