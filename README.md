@@ -1,6 +1,6 @@
 # shopping-cart-my-ver
 
-> _This repo was created for learning purposes and one of the [_**#Coming Back To Programming**_](https://github.com/xvferdy/beginner-portfolio "Beginner Portfolio") activities that started on September 24th…_
+> _This repo was created for learning purposes and one of the [_**#Coming Back To Programming**_](https://github.com/xvferdy/beginner-portfolio "Beginner Portfolio") activities that started on September 24t 2021…_
 
 ## :round_pushpin:Table of Contents
 - [About The Project](#about-the-project)
