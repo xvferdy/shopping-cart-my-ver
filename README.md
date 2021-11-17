@@ -35,6 +35,9 @@ npm install
 ```
 npm start
 ```
+```
+npm run build
+```
 
 ## Launch
 - http://localhost:3000/ ➡️ Product list
