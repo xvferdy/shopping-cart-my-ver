@@ -7,15 +7,15 @@
     - [Built with](#built-with)
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
-- [How to Use](#how-to-use)
     - [Installing It](#installing-it)
     - [Running it](#running-it)
 - [Live](#live)
 
 ## About the Project
+Loreming
 
 ### Built With
-- [React]
+- React
 - [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext)
 - [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer)
 
@@ -24,13 +24,13 @@
 - [Node.js](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
 
-## How to Use
-### Installing It
+
+## Installing It
 ```
 npm install
 ```
 
-### Running it
+## Running it
 - http://localhost:3000/ ➡️ Product list
 - http://localhost:3000/shopping-cart ➡️ Cart list
 
@@ -38,5 +38,5 @@ npm install
 ### Live
 **Overview** 🌈
 <p align="">
-  <img src="./src/assets/overview.jpg">
+  <img src="./src/assets/overview.JPG">
 </p>
