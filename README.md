@@ -28,7 +28,7 @@ Simple implementation of state management using react built-in hooks ➤ `useCon
 - [NPM](https://www.npmjs.com/)
 
 
-## Installation
+### Installation
 ```
 npm install
 ```
