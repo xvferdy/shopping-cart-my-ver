@@ -4,10 +4,10 @@
 
 ## :round_pushpin:Table of Contents
 - [About The Project](#about-the-project)
-    - [Built with](#built-with)
+    - [Built with](#-built-with)
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
+    - [Installation](#-installation)
     - [Launch](#launch)
 
 ## About the Project
@@ -18,7 +18,7 @@ Simple implementation of state management using react built-in hooks ➤ `useCon
   <img src="./src/assets/overview.JPG">
 </p>
 
-### Built With
+### 👀 Built With
 - React
 - [Material-UI](https://github.com/mui-org/material-ui)
 
