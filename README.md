@@ -20,6 +20,7 @@ Simple implementation of state management using react built-in hooks ➤ `useCon
 
 ### Built With
 - React
+- [Material-UI](https://github.com/mui-org/material-ui)
 
 ## Getting Started
 ### Prerequisites
