@@ -9,12 +9,11 @@
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Launch](#launch)
-- [Live](#live)
 
 ## About the Project
 Simple implementation of state management using react built-in hooks ➤ `useContext()`, `useReducer()` and as an example of a case study on this project is a supermarket/shopping cart.
 
-**Overview** 🌈
+**[Demo](https://xvferdy.github.io/shopping-cart-my-ver/)** 👓 
 <p align="">
   <img src="./src/assets/overview.JPG">
 </p>
@@ -56,5 +55,6 @@ npm run deploy
 - http://localhost:3000/shopping-cart ➡️ Cart list
 
 
-## Live
-https://xvferdy.github.io/shopping-cart-my-ver/
+<h3 align="right">
+      <a href="#shopping-cart-my-ver">To Top ⤴️</a>
+</h3>
