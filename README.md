@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# shopping-cart-my-ver
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> _This repo was created for learning purposes and one of the [_**#Coming Back To Programming**_](https://github.com/xvferdy/beginner-portfolio "Beginner Portfolio") activities that started on September 24 2021…_
 
-## Available Scripts
+## :round_pushpin:Table of Contents
+- [About The Project](#about-the-project)
+    - [Built with](#-built-with)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#-installation)
+    - [Launch](#launch)
 
-In the project directory, you can run:
+## About the Project
+Simple implementation of state management using react built-in hooks ➤ `useContext()`, `useReducer()` and as an example of a case study on this project is a supermarket/shopping cart.
 
-### `npm start`
+**[Demo](https://xvferdy.github.io/shopping-cart-my-ver/)** 👓 
+<p align="">
+  <img src="./src/assets/overview.JPG">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 👀 Built With
+- React
+- [Material-UI](https://github.com/mui-org/material-ui)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
+### Prerequisites
+- [Node.js](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📦 Installation
+```
+npm install
+```
+```
+npm start
+```
+**Deployment**
+```
+npm install --save gh-pages
+```
+###### package.json
+```JSON
+  "homepage": "https://myusername.github.io/shopping-cart-my-ver",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+  },
+```
+```
+npm run deploy
+```
 
-### `npm run build`
+## Launch
+- http://localhost:3000/ ➡️ Product list
+- http://localhost:3000/shopping-cart ➡️ Cart list
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h3 align="right">
+      <a href="#shopping-cart-my-ver">To Top ⤴️</a>
+</h3>
